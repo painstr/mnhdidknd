@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0f">
+  <meta name="description" content="Muhammad Rafif — curious minds, creative ideas, digital experiments. Tech enthusiast dan creative developer.">
+  <title>Portofolio Muhammad Rafif — Vibe Coder</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-mark">MR<span>!</span></div>
+    <div class="preloader-track"><span></span></div>
+    <p>LOADING GOOD THINGS...</p>
+  </div>
+  <canvas class="starfield" aria-hidden="true"></canvas>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <div class="clock-bar" role="group" aria-label="Tanggal dan waktu saat ini">
+    <div class="clock-left">
+      <span class="clock-live"><i aria-hidden="true"></i><span>LIVE</span></span>
+      <span class="clock-date"><span class="d-long">--</span><span class="d-short">--</span></span>
+    </div>
+    <div class="clock-right">
+      <time class="clock-time" id="clock-time"><span data-h>--</span><b>:</b><span data-m>--</span><b>:</b><span data-s>--</span></time>
+      <span class="clock-tz" id="clock-tz">WIB</span>
+    </div>
+  </div>
+
+  <aside class="site-header" aria-label="Sidebar portofolio">
+    <a class="brand" href="#home" aria-label="Muhammad Rafif, kembali ke beranda"><span class="brand-mark">MR</span><span class="brand-name">MUHAMMAD<br>RAFIF<span class="brand-period">.</span></span></a>
+    <p class="sidebar-label">PORTFOLIO / INDEX</p>
+    <button class="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Bagian portofolio">
+      <a class="nav-link is-active" href="#home" aria-current="location"><span class="nav-icon" aria-hidden="true">01</span><span>HOME</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a class="nav-link" href="#about"><span class="nav-icon" aria-hidden="true">02</span><span>ABOUT</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a class="nav-link" href="#interests"><span class="nav-icon" aria-hidden="true">03</span><span>INTERESTS</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a class="nav-link" href="#projects"><span class="nav-icon" aria-hidden="true">04</span><span>PROJECTS</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a class="nav-link nav-contact" href="#contact"><span class="nav-icon" aria-hidden="true">05</span><span>CONTACT</span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="sidebar-tools">
+      <p class="sidebar-tagline">CURIOUS MINDS.<br>CREATIVE IDEAS.<br>DIGITAL EXPERIMENTS.</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <div class="hero-doodles" aria-hidden="true">
+        <span class="doodle doodle-star">✳</span><span class="doodle doodle-cross">✳</span>
+        <span class="doodle doodle-spark">✦</span><span class="doodle doodle-circle"></span>
+        <span class="doodle doodle-arrow">↘</span><span class="doodle doodle-dot-grid">•••<br>•••<br>•••</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> INTERNET, BUT MADE FUN</p>
+        <h1 id="hero-title"><span class="hero-hey">HEY, I'M</span><span class="hero-name">MUHAMMAD</span><span class="hero-last">RAFIF<span class="hero-period">.</span></span></h1>
+        <div class="hero-labels" aria-label="Tentang Muhammad Rafif"><span>16 Y/O</span><span>TECH ENTHUSIAST</span><span>CREATIVE CODER</span></div>
+        <p class="hero-description">Mengeksplorasi perangkat keras, membangun perangkat lunak, dan mengubah ide menjadi pengalaman digital yang seru.</p>
+        <div class="hero-actions">
+          <a class="action-button action-yellow magnetic" href="#about"><span>EXPLORE MY WORLD</span><span class="button-arrow" aria-hidden="true">↘</span></a>
+          <a class="action-button action-light magnetic" href="#contact"><span>LET'S CONNECT</span><span class="button-arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="footnote-spark">✳</span><span>CURIOUS BY NATURE.<br>BUILDING FOR THE FUN OF IT.</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Area foto profil">
+        <div class="hero-art-stamp stamp-top" aria-hidden="true">FULL OF<br>QUESTIONS</div>
+        <div class="portrait-shadow" aria-hidden="true"></div>
+        <figure class="portrait-card" data-tilt>
+          <div class="portrait-topline"><span>FIG. 01 — THE CREATOR</span><span class="portrait-live"><i></i> ONLINE</span></div>
+          <div class="portrait-placeholder has-photo">
+            <img src="./asset/rafif.jpg" alt="Muhammad Rafif" class="portrait-photo">
+          </div>
+          <figcaption class="portrait-footer"><span>MUHAMMAD RAFIF</span><span>EST. 2010 <span aria-hidden="true">✳</span></span></figcaption>
+        </figure>
+        <div class="hero-art-stamp stamp-bottom" aria-hidden="true">NO IDEA<br>TOO WEIRD</div>
+        <span class="art-spark art-spark-one" aria-hidden="true">✴</span><span class="art-spark art-spark-two" aria-hidden="true">✳</span>
+      </div>
+      <a class="scroll-cue" href="#about"><span>SCROLL DOWN</span><span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>CURIOUS MINDS</span><b>✳</b><span>CREATIVE IDEAS</span><b>✳</b><span>DIGITAL EXPERIMENTS</span><b>✳</b><span>CURIOUS MINDS</span><b>✳</b><span>CREATIVE IDEAS</span><b>✳</b><span>DIGITAL EXPERIMENTS</span><b>✳</b></div></div>
+
+    <!-- About section -->
+    <section class="about section-shell section-pad" id="about" aria-labelledby="about-title">
+      <div class="section-kicker"><span>01 / ABOUT ME</span><span>GETTING TO KNOW ME</span></div>
+      <div class="about-layout">
+        <div class="about-heading reveal">
+          <p class="section-overline">A LITTLE BIT ABOUT ME</p>
+          <h2 id="about-title">WHO IS<br><span>RAFIF</span><b>?</b></h2>
+          <div class="about-sticker" aria-hidden="true"><span>100%</span><small>CURIOUS</small><i>↗</i></div>
+        </div>
+        <div class="about-copy reveal">
+          <p class="about-lede">Pikiran yang selalu penasaran dengan keyboard di tangan dan terlalu banyak tab browser terbuka.</p>
+          <p>Saya adalah tech enthusiast berusia 16 tahun dengan rasa ingin tahu yang besar tentang bagaimana segala sesuatu bekerja di balik layar. Saya senang mengeksplorasi computer hardware, memahami software, dan bereksperimen dengan vibe coding untuk mengubah ide menjadi karya digital nyata.</p>
+          <div class="about-facts">
+            <div class="fact"><span class="fact-number">16</span><span>YEARS<br>OLD</span></div>
+            <div class="fact"><span class="fact-number">∞</span><span>THINGS TO<br>LEARN</span></div>
+            <div class="fact"><span class="fact-number">01</span><span>BIG<br>CURIOSITY</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="about-bottom-note"><span>✳</span> CURIOUS MINDS. CREATIVE IDEAS. DIGITAL EXPERIMENTS.<span>✳</span></div>
+    </section>
+
+    <!-- Interests section -->
+    <section class="interests section-shell section-pad" id="interests" aria-labelledby="interests-title">
+      <div class="section-kicker"><span>02 / INTERESTS & FOCUS</span><span>THREE THINGS ON MY MIND</span></div>
+      <div class="section-heading-row reveal"><div><p class="section-overline">WHAT I'M INTO</p><h2 id="interests-title">THINGS<br>I <span>LOVE</span><b>.</b></h2></div><p class="heading-side-note">Beberapa topik yang selalu<br>menarik perhatian saya <span aria-hidden="true">↙</span></p></div>
+      <div class="interest-grid">
+        <article class="interest-card hardware-card reveal">
+          <div class="card-topline"><span>01 / UNDER THE HOOD</span><span class="card-symbol" aria-hidden="true">✳</span></div>
+          <div class="interest-illustration hardware-illustration" aria-hidden="true"><div class="chip-graphic"><span>CPU</span><i></i></div><span class="illustration-label ilabel-a">CORE<br>MEMORY</span><span class="illustration-label ilabel-b">∞ GB</span><span class="circuit-line"></span></div>
+          <h3>HARD<br>WARE<span>.</span></h3>
+          <p>Mengeksplorasi komponen komputer, prosesor, RAM, penyimpanan, periferal, dan arsitektur yang membuat semuanya berjalan.</p>
+          <div class="card-bottom"><span>THINKING IN CIRCUITS</span><span aria-hidden="true">↗</span></div>
+        </article>
+        <article class="interest-card software-card reveal">
+          <div class="card-topline"><span>02 / BEHIND THE SCREEN</span><span class="card-symbol" aria-hidden="true">✳</span></div>
+          <div class="interest-illustration software-illustration" aria-hidden="true"><div class="window-graphic"><div class="window-dots"><i></i><i></i><i></i></div><span class="code-mark">&lt;/&gt;</span><span class="window-cursor">_</span></div><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span></div>
+          <h3>SOFT<br>WARE<span>.</span></h3>
+          <p>Tertarik pada aplikasi, sistem operasi, pemrograman, dan semua logika tersembunyi yang membuat alat digital bekerja.</p>
+          <div class="card-bottom"><span>IDEAS INTO INTERFACES</span><span aria-hidden="true">↗</span></div>
+        </article>
+        <article class="interest-card vibe-card reveal">
+          <div class="card-topline"><span>03 / PLAYFUL CREATION</span><span class="card-symbol" aria-hidden="true">✳</span></div>
+          <div class="interest-illustration vibe-illustration" aria-hidden="true"><div class="idea-bubble">IDEA!</div><div class="idea-arrow">↘</div><div class="idea-block">BUILD<br>NOW.</div><span class="idea-spark">✳</span><span class="idea-star">✦</span></div>
+          <h3>VIBE<br>CODING<span>.</span></h3>
+          <p>Bereksperimen dengan AI-assisted coding, membangun website, dan mengubah ide mentah menjadi sesuatu yang bisa langsung dicoba.</p>
+          <div class="card-bottom"><span>MAKE IT REAL</span><span aria-hidden="true">↗</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects section (Coming Soon) -->
+    <section class="projects section-shell section-pad" id="projects" aria-labelledby="projects-title">
+      <div class="section-kicker"><span>03 / WORK & PROJECTS</span><span>WORK IN PROGRESS</span></div>
+      <div class="section-heading-row reveal"><div><p class="section-overline">SPACE FOR WHAT COMES NEXT</p><h2 id="projects-title">COMING<br><span>SOON</span><b>!</b></h2></div><div class="project-note"><span class="note-star" aria-hidden="true">✳</span><p>Semua proyek masih dalam tahap pengembangan dan eksperimen. Segera hadir!</p></div></div>
+      <div class="project-grid">
+        <article class="project-card project-one reveal">
+          <div class="project-art project-art-one" aria-label="Ilustrasi proyek coming soon 01"><div class="art-window"><div class="art-window-bar"><i></i><i></i><i></i></div><div class="art-big-type">COMING<br>SOON<span>_</span></div><div class="art-corner-label">PROJECT 001<br>IN PROGRESS</div></div><span class="art-sticker">SOON<br>ISH!</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJECT 01 — COMING SOON</span><span>01 — 03</span></div><h3>COMING<br>SOON<span>.</span></h3><p>Eksperimen digital pertama sedang dirakit di balik layar. Nantikan pembaruannya segera!</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>IN PROGRESS</span></div><div class="project-actions"><button class="project-action" type="button" data-placeholder="Live demo">COMING SOON <span aria-hidden="true">⏳</span></button><button class="project-action" type="button" data-placeholder="Source code">STAY TUNED <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="project-card project-two reveal">
+          <div class="project-art project-art-two" aria-label="Ilustrasi proyek coming soon 02"><div class="orbit-art"><span class="orbit-word">COMING<br>SOON<br>02</span><i>✳</i><b>02</b></div><span class="art-label-two">IDEAS IN<br>MOTION</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJECT 02 — COMING SOON</span><span>02 — 03</span></div><h3>COMING<br>SOON<span>.</span></h3><p>Sedang menyiapkan sesuatu yang interaktif dan menyenangkan untuk dicoba.</p><div class="project-tags"><span>JAVASCRIPT</span><span>EXPERIMENT</span></div><div class="project-actions"><button class="project-action" type="button" data-placeholder="Live demo">COMING SOON <span aria-hidden="true">⏳</span></button><button class="project-action" type="button" data-placeholder="Source code">STAY TUNED <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+        <article class="project-card project-three reveal">
+          <div class="project-art project-art-three" aria-label="Ilustrasi proyek coming soon 03"><div class="poster-grid"><span>IDEA</span><span>→</span><span>CODE</span><span>↘</span><span>?</span><span>SOON!</span></div><div class="poster-badge">COMING<br>SOON</div><span class="poster-doodle">✳</span></div>
+          <div class="project-info"><div class="project-meta"><span>PROJECT 03 — COMING SOON</span><span>03 — 03</span></div><h3>COMING<br>SOON<span>.</span></h3><p>Slot khusus untuk proyek kreatif berikutnya yang layak dipamerkan di sini.</p><div class="project-tags"><span>VIBE CODING</span><span>NEXT UP</span></div><div class="project-actions"><button class="project-action" type="button" data-placeholder="Live demo">COMING SOON <span aria-hidden="true">⏳</span></button><button class="project-action" type="button" data-placeholder="Source code">STAY TUNED <span aria-hidden="true">↗</span></button></div></div>
+        </article>
+      </div>
+      <p class="project-disclaimer"><span aria-hidden="true">↗</span> Semua kartu proyek berstatus Coming Soon dan akan segera diperbarui saat sudah rilis.</p>
+    </section>
+
+    <!-- Tools section -->
+    <section class="toolkit section-shell section-pad" id="toolkit" aria-labelledby="toolkit-title">
+      <div class="section-kicker"><span>04 / TOOLKIT</span><span>ALWAYS LEARNING</span></div>
+      <div class="toolkit-layout">
+        <div class="toolkit-copy reveal"><p class="section-overline">TOOLS IN MY ORBIT</p><h2 id="toolkit-title">TOOLS IN<br>MY <span>WORLD</span><b>.</b></h2><p>Bukan daftar pamer keahlian — melainkan teknologi yang sedang saya pelajari, gunakan, dan eksplorasi. Proses belajar selalu berjalan.</p><div class="tool-legend"><span><i class="legend-learning"></i> LEARNING &amp; EXPLORING</span><span><i class="legend-curious"></i> CURIOUS ABOUT</span></div></div>
+        <div class="tool-stickers reveal" aria-label="Teknologi yang dieksplorasi Muhammad Rafif">
+          <div class="tool-sticker sticker-html"><span class="tool-icon">5</span><span>HTML</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-css"><span class="tool-icon">#</span><span>CSS</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-js"><span class="tool-icon">JS</span><span>JAVASCRIPT</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-python"><span class="tool-icon">Py</span><span>PYTHON</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-git"><span class="tool-icon">↗</span><span>GIT</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-github"><span class="tool-icon">GH</span><span>GITHUB</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-ai"><span class="tool-icon">AI</span><span>AI CODING</span><small>EXPLORING</small></div>
+          <div class="tool-sticker sticker-react"><span class="tool-icon">◉</span><span>REACT</span><small>NEXT UP</small></div>
+          <span class="tool-doodle tool-doodle-one" aria-hidden="true">✳</span><span class="tool-doodle tool-doodle-two" aria-hidden="true">↗</span>
+        </div>
+      </div>
+      <div class="toolkit-footer"><span>SKILLS GROW BY MAKING THINGS.</span><span aria-hidden="true">✳</span><span>AND MAKING THEM BETTER.</span></div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact section-shell section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="section-kicker"><span>05 / YOUR TURN</span><span>OPEN TO FUN IDEAS</span></div>
+      <div class="contact-main reveal"><div class="contact-doodle" aria-hidden="true">✳</div><p class="section-overline">GOT A QUESTION? OR A COOL IDEA?</p><h2 id="contact-title">GOT AN<br><span>IDEA</span><b>?</b></h2><p class="contact-description">Mari terhubung, bertukar pikiran, dan membangun sesuatu yang menarik bersama.</p><a class="action-button action-blue magnetic" href="#contact-links"><span>LET'S BUILD SOMETHING</span><span class="button-arrow" aria-hidden="true">↘</span></a></div>
+      <div class="contact-links" id="contact-links">
+        <p class="contact-links-label">CONNECT WITH ME HERE</p>
+        <div class="contact-link-grid">
+          <a class="contact-card" href="mailto:muhammadrafif0110@gmail.com"><span class="contact-icon" aria-hidden="true">@</span><span>EMAIL<br><small>muhammadrafif0110@gmail.com</small></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+          <button class="contact-card" type="button" data-contact="GitHub"><span class="contact-icon" aria-hidden="true">GH</span><span>GITHUB<br><small>Nanti menyusul</small></span><span class="contact-arrow" aria-hidden="true">⏳</span></button>
+          <a class="contact-card" href="https://instagram.com/ceoxasr" target="_blank" rel="noopener noreferrer"><span class="contact-icon" aria-hidden="true">◎</span><span>INSTAGRAM<br><small>@ceoxasr</small></span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+          <button class="contact-card" type="button" data-contact="Telegram"><span class="contact-icon" aria-hidden="true">↗</span><span>TELEGRAM<br><small>Nanti menyusul</small></span><span class="contact-arrow" aria-hidden="true">⏳</span></button>
+        </div>
+        <p class="contact-hint">Klik Email atau Instagram (@ceoxasr) untuk terhubung langsung. GitHub &amp; Telegram akan segera menyusul.</p>
+      </div>
+      <footer class="site-footer"><a class="footer-brand" href="#home">MR<span>.</span></a><p>CURIOUS MINDS. CREATIVE IDEAS. DIGITAL EXPERIMENTS.</p><a class="back-top" href="#home">BACK TO TOP <span aria-hidden="true">↑</span></a><span class="footer-copy">© 2026 MUHAMMAD RAFIF</span></footer>
+    </section>
+  </main>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
